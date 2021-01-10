@@ -1,0 +1,506 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* подключил шрифт! open sans */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER START */
+header{
+    background-color: #f6f2f2;
+    padding-top: 30px;    
+    padding-bottom: 110px;
+}
+
+p{
+    color: #585858;
+    line-height: 28px;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menu{
+    background-color: #313030;
+    display: flex;
+    justify-content: center;    
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.49px;
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e0e0e0;
+    padding: 30px 20px 30px;
+    user-select: none;  /* запретить выделение пользователем */    
+    font-size: 14px;
+}
+
+.menu a:hover{
+    background-color:#ff3f40;
+}
+/* MENU END */
+
+/* MAIN TOP START */
+
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.main-title{
+    width: 535px;
+}
+
+h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.btn{
+    background-color: #ff2d2d;
+    width: 225px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18.14px;
+    font-weight: bold;
+    margin-top: 35px;
+    user-select: none;
+}
+
+.main-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 355px;
+    background-color: #c4c0b1;
+    box-shadow: 1px 1px 60px 1px #868383;
+}
+
+
+/* MAIN TOP END */
+/* HEADER END */
+/* section .skills START */
+.skills{
+    padding-top: 100px;
+}
+
+.skill-text{
+    width: 520px;
+}
+.skill-text h2{
+    text-transform: uppercase;
+    font-size: 42px;
+    padding-bottom: 35px;
+    line-height: 1.4;
+    color: #585858;
+}
+
+.skill-text .btn{
+    border: 2px solid #ff2d2d;
+    background-color: #fff;
+    color: #ff2d2d;    
+}
+
+.box-cards{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+    border-bottom: 2px solid #ececec;
+}
+
+.skill-cards{
+    display: flex;
+    width: 625px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-card {
+    width: 305px;
+    margin-bottom: 30px;
+}
+
+.card-name{
+    margin: 15px 0;
+    color: #414141;
+}
+
+/* section .skills END */
+/* section .feature START */
+.feature{
+    margin-top: 100px;
+}
+#feature-head{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#feature-head h2{
+    text-transform: uppercase;
+    font-size: 42px;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    color: #585858;
+    margin-bottom: 0;
+}
+
+#feature-head p{
+    width: 510px;
+    margin: 0 auto;
+}
+
+#feature-head::after{
+    content: '';
+    display: block;
+    margin: 30px auto;
+    width: 130px;
+    height: 2px;
+    background-color:#ff2d2d;
+}
+
+.feature-gallery{    
+    margin-bottom: 100px;
+}
+
+.feature-menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 900px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #4c4c4c;
+    margin-bottom: 60px;    
+    user-select: none;
+}
+.feature-menu li:hover{
+    color: #ff2d2d;
+    cursor: pointer;
+}
+
+.feature-images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 300px;
+    height: 300px;
+    background-color: #f5f0dd;
+    margin: 0 -20px 20px 0;
+    transition: 1s
+}
+
+.block:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 60px 1px #868383;
+}
+/* section .feature END */
+/* section .team START */
+.team{
+    margin-bottom: 150px;
+}
+#team-head{
+    padding-bottom: 70px;
+}
+#team-head h2{
+    text-transform: uppercase;
+    font-size: 42px;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    color: #585858;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+#team-head p{
+    width: 450px;
+}
+
+#team-head p::after{
+    content: '';
+    display: block;  
+    background-color:#ff2d2d;
+    width: 130px;
+    height: 2px;
+    margin-top: 30px;
+}
+
+.about-person{
+    display: flex;
+}
+
+.main-photo{
+    background-color: #f5f0dd;
+    min-width: 320px;
+    height: 460px;
+    margin-right: 70px;
+}
+
+.main-team h3{
+    display: flex;
+    width: 855px;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.main-team p{
+    width: 640px;
+    margin-bottom: 45px;
+}
+
+.links a{
+    margin-right: 30px;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.links a:hover{
+    color:#ff2d2d;
+}
+
+.team-photo{
+    display: flex;
+    margin-top: 45px;
+}
+
+.photo-block{
+    display: flex;
+    width: 200px;
+    height: 215px;
+    background-color: #f5f0dd;
+    margin-right: 20px;
+}
+
+.name-bottom p{
+    opacity: 0;
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #7a786e;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 175px;
+    padding-top: 8px;    
+    user-select: none;
+}
+
+/* нужна помощь с тем что бы при наведение на фото-блок выскакивало внизу имя, а не как сейчас (когда только внизу наводишь) */
+
+.name-bottom p:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+
+/* section .team END */
+
+/* section .email START */
+.email{
+    background-color: #f5f0dd;
+    margin-top: 110px;
+    height: 510px;
+    width: 100%;
+    text-align: center;
+}
+
+.email h3{
+    font-size: 42px;
+    color: #fff;
+    padding-top: 140px;
+}
+
+.email p{
+    font-size: 16px;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.email-form{
+    padding-top: 60px;
+}
+
+.mail-place input{
+    width: 520px;
+    height: 80px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;    
+    padding-left: 35px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #6b6b6b;
+}
+
+.subscribebtn{
+    margin-left: 22px;
+    border: none;
+    width: 215px;
+    height: 80px;
+    border-radius: 4px;
+    background-color: #ff2d2d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* section .email END */
+
+/* section .contact START */
+#contact-head{
+    margin-top: 105px;
+}
+
+#contact-head h2{
+    text-transform: uppercase;
+    font-size: 42px;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    color: #585858;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+#contact-head p{
+    width: 725px;
+}
+
+#contact-head p::after{
+    content: '';
+    display: block;
+    width: 130px;
+    height: 2px;
+    background-color:#ff2d2d;
+    margin-top: 45px;
+    margin-bottom: 75px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.message-form .name{
+    border: none;
+    width: 340px;
+    height: 70px;
+    background-color: #e5e5e5;
+    font-size: 18.4px;
+    color: #444444;
+    padding-left: 45px;
+    border-radius: 8px;
+    margin-right: 46px;
+}
+.message-form .mail{
+    border: none;
+    width: 340px;
+    height: 70px;
+    background-color: #e5e5e5;
+    font-size: 18.4px;
+    color: #444444;
+    padding-left: 45px;
+    border-radius: 8px;
+}
+
+.message-form input{
+    margin-bottom: 45px;
+}
+
+.message-form{
+    width: 60%;
+}
+
+.message-form textarea{
+    width: 730px;
+    height: 250px;
+    background-color:#e5e5e5;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 45px;
+    padding-left: 30px;
+    font-size: 18.4px;
+    padding-top: 35px;
+    padding-left: 50px;
+    color: #444444;
+}
+
+.message-btn{
+    width: 730px;
+    height: 70px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff3f40;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contact-info{
+    background-color: #2d2d2d;
+    width: 40%;
+    height: 485px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contact-info h4{
+    color: #e0e0e0;
+    text-transform: uppercase;
+    padding-top: 130px;
+}
+
+.contact-info p{
+    color: #d5d5d5;
+    padding-top: 45px;
+}
+/* section .cantact END */
+
+/* footer START */
+
+footer{
+    height: 111px;
+    width: 100%;
+    background-color: #313030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    padding-left: 165px;
+    padding-right: 715px;
+    color: #afafaf;
+}
+
+footer img{
+    padding-right: 15px;
+}
+
+/* footer END */
